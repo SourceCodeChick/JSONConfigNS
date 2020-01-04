@@ -8,11 +8,11 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("JSON Config NS")]
-[assembly: AssemblyDescription("JSON Configuration File Editor")]
+[assembly: AssemblyDescription("Create or edit files for storing SQL Server database connection details in JSON format with password encryption.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Source Code Chick, LLC.")]
 [assembly: AssemblyProduct("JSON Config NS")]
-[assembly: AssemblyCopyright("Copyright © 2020, Source Code Chick")]
+[assembly: AssemblyCopyright("Copyright © 2020, Stacey Erin Adams")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -51,5 +51,5 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.1.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

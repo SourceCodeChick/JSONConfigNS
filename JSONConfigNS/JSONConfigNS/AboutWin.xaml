@@ -5,12 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JSONConfigNS"
         mc:Ignorable="d"
-        Title="About" Height="246.455" Width="422.659" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="About" Height="306.218" Width="461.659" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,0,2">
-        <Button x:Name="OKBtn" Content="OK" HorizontalAlignment="Left" Margin="307,159,0,0" VerticalAlignment="Top" Width="89" Height="38" FontWeight="Bold" FontSize="18" Click="OKBtn_Click"/>
-        <Label Content="JSONConfigNS Editor" HorizontalAlignment="Left" Margin="24,26,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <Label Content="Version 1.0" HorizontalAlignment="Left" Margin="24,74,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="Last Updated:  1/4/2020" HorizontalAlignment="Left" Margin="24,94,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="Copyright © 2020, Source Code Chick" HorizontalAlignment="Left" Margin="24,123,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="ApplicationNameLbl" Content="--" HorizontalAlignment="Left" Margin="144,28,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" Foreground="#FF14377B"/>
+        <Label x:Name="CopyrightLbl" Content="--" HorizontalAlignment="Left" Margin="20,223,0,0" VerticalAlignment="Top" Foreground="#FF8B93C7"/>
+        <Image x:Name="ApplicationIcon" HorizontalAlignment="Left" Height="100" Margin="17,18,0,0" VerticalAlignment="Top" Width="100" Source="JSCFG.ico"/>
+        <Label Content="Version:&#xD;&#xA;Build Date/Time:" HorizontalAlignment="Left" Margin="144,74,0,0" VerticalAlignment="Top" Foreground="#FF14377B"/>
+        <Label Content="Description:" HorizontalAlignment="Left" Margin="17,132,0,0" VerticalAlignment="Top" Foreground="#FF14377B" Width="84" FontWeight="Bold"/>
+        <Label x:Name="VersionLbl" Content="--" HorizontalAlignment="Left" Margin="247,74,0,0" VerticalAlignment="Top" Foreground="#FF14377B"/>
+        <Label x:Name="BuildDateLbl" Content="--" HorizontalAlignment="Left" Margin="247,92,0,0" VerticalAlignment="Top" Foreground="#FF14377B"/>
+        <Button x:Name="OKBtn" Content="OK" HorizontalAlignment="Left" Margin="343,210,0,0" VerticalAlignment="Top" Width="89" Height="38" FontWeight="Bold" FontSize="18" Click="OKBtn_Click" Foreground="#FF14377B" Background="#FFDDDDDD" OpacityMask="Black"/>
+        <TextBox x:Name="DescriptionTextBox" HorizontalAlignment="Left" Height="62" Margin="20,158,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="308" BorderBrush="{x:Null}" IsEnabled="False" Cursor="Arrow"/>
     </Grid>
 </Window>
