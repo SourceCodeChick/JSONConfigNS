@@ -444,10 +444,10 @@ namespace NSJSONConfigMakerWPF
 
         void ForceRefresh()
         {
-            //MainGrid.Dispatcher.Invoke(emptyDelegate, DispatcherPriority.Render);
             Dispatcher.Invoke(new Action(() => { }), DispatcherPriority.ContextIdle, null);
         }
 
+        // Set up backgroundworker to run SQL DB connection test asynchronously
         private void TestConnection()
         {
             BackgroundWorker worker = new BackgroundWorker();
@@ -704,7 +704,6 @@ namespace NSJSONConfigMakerWPF
                     TimeoutTextBox.Text = "30";
                 }
             }
-
         }
 
         private void ConnectionStringLinkLbl_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
